@@ -1,5 +1,13 @@
+body{
+  background: #F5F7FB;
+  font-family: Karla, sans-serif;
+}
+
 .App {
   text-align: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .App-logo {
@@ -11,6 +19,70 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.main {
+  /* border: yellow solid; */
+  /* background-color: yellow; */
+  margin-top: 25vh;
+  padding: 50px;
+}
+
+.main-title {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5rem;
+  line-height: 37px;
+  text-align: center;
+
+  color: #293264;
+}
+
+.main-description {  
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 19px;
+  text-align: center;
+  color: #293264;
+}
+
+.main-button {
+  width: 193px;
+  height: 52px;
+  color: white;
+  background: #4D5B9E;
+  border-radius: 15px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-button:hover {
+  background: #3e4a80;
+}
+
+.top-blob {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 297px;
+  height: 235px;
+  z-index: -1;
+  
+}
+
+.bottom-blob {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 297px;
+  height: 235px;
+  z-index: -1;
+  
 }
 
 .App-header {
