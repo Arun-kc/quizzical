@@ -1,0 +1,43 @@
+
+.main {
+    /* border: yellow solid; */
+    /* background-color: yellow; */
+    margin-top: 25vh;
+    padding: 50px;
+  }
+  
+  .main-title {
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 37px;
+    text-align: center;
+  
+    color: #293264;
+  }
+  
+  .main-description {  
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.2rem;
+    line-height: 19px;
+    text-align: center;
+    color: #293264;
+  }
+  
+  .main-button {
+    width: 193px;
+    height: 52px;
+    color: white;
+    background: #4D5B9E;
+    border-radius: 15px;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .main-button:hover {
+    background: #3e4a80;
+  }

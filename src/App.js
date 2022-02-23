@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import top_blob from './assets/top_blob.png'
+import bottom_blob from './assets/bottom_blob.png'
+import Main from './components/main/Main';
+import React, {useState} from 'react';
+import Quiz from './components/quiz/Quiz';
 
 function App() {
+  const [main, setMain] = useState(true)
+
+  function changeMain (){
+    setMain(prevState => !prevState)
+    console.log('clicked on start quize button')
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img className="top-blob" src={top_blob} alt="top blob" />
+      { main && <Main changeMain={() => changeMain()}/>}
+      { !main && <Quiz />}
+      <img className="bottom-blob" src={bottom_blob} alt="bottom blob" />
     </div>
   );
 }
