@@ -1,0 +1,119 @@
+.quiz-body {
+    /* border: red solid; */
+    margin: 20px 100px;
+    padding: 20px;
+}
+
+.quiz-heading {
+    text-align: left;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #293264;
+}
+
+.quiz-seperator {
+    width: 500px;
+    height: 0px;
+    border: 0.794239px solid #DBDEF0;
+    transform: rotate(-0.05deg);
+    margin-right: 50%;
+    margin-left: 10%;
+
+}
+
+.quiz-options {
+    /* border: solid yellow; */
+    display: grid;
+    grid-template: auto auto / repeat(4, 1fr);
+    grid-column-gap: 40px;
+    justify-content: center;
+}
+
+.quiz-option {
+    /* background: #F5F7FB;
+    border: 0.771045px solid #4D5B9E;
+    border-radius: 10px;
+    color: #293264;
+    padding: 10px;
+    box-sizing: border-box;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+
+    cursor: pointer; */
+    
+}
+
+.quiz-option label,
+.quiz-option input {
+    display: block;
+    margin: 0;
+
+    background: #F5F7FB;
+    border: 0.771045px solid #4D5B9E;
+    border-radius: 10px;
+    color: #293264;
+    padding: 10px;
+    box-sizing: border-box;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+/* label:hover, input:hover {
+    background-color: red;
+} */
+
+.quiz-option input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100;
+  }
+
+/* .quiz-message-container{
+    display: inline-block;
+} */
+
+.quiz-score-message {
+
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding: 10px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 15px;
+    text-align: center;
+
+    color: #293264;
+}
+
+.playagain-button {
+    width: 193px;
+    height: 52px;
+    color: white;
+    background: #4D5B9E;
+    border-radius: 15px;
+    margin-top: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .playagain-button:hover {
+    background: #3e4a80;
+  }
